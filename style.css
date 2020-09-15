@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #1f2235;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+.m-heading{
+    font-family: 'Roboto Slab', serif;
+    font-size: large;
+}
+
+.navigation-link{
+    border: 2px solid transparent;
+}
+.navigation-link:hover{
+    text-decoration: none;
+    border-bottom:2px solid #f5ba09;
+    transition:0.5s ease;
+}
+.main-container{
+    min-height: 70vh;
+    
+}
+.main_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_row h1{
+    font-size: 4rem;
+}
+.main_row img{
+    width: auto;
+    height: 50vh;
+    padding-left: 5rem;
+}
+.card{
+    border-bottom: 8px solid #f5ba09;
+}
+
+.inner{
+    padding-top: 20px;
+}
+.skill-area{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:1rem;
+    padding: 1rem 80px;
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-right: 1.5rem;
+}
+.skill-box{
+    padding: 1rem;
+    color: #ddd;
+    cursor: pointer;
+    height: 50vh;
+}
+.skill-box:hover > .skill-title::after , .skill-box:hover > .skill-title::before{
+    width: 35px;
+}
+.skill-box:hover .img{
+    transform: translateY(-10px);
+}
+.skill-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.skill-title h4{
+    color: #f5ba09;
+    margin-top: 0.5rem;
+}
+.img{
+    width:80px;
+    height: 80px;
+    position: relative;
+    border-radius: 45px;
+    background-color: #fff;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+    transition: .5s;
+}
+.img::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:50%;
+    height: 80px;
+    border-radius: 45px;
+}
+
+.skill-icon{
+    width:50px;
+    z-index: 2;
+}
+@media screen and (max-width:990px)
+{
+    .skill-area{
+        grid-template-columns: repeat(2,1fr);
+        padding: 2rem 50px;
+    }
+}
+@media screen and (max-width:650px)
+{
+    .skill-area{
+        grid-template-columns: 1fr;
+        
+    }
+}
+.media_link{
+    padding: 1rem;
+    max-width: 15rem;
+    margin-left: 1rem;
+    border: 2px solid #f5ba09;
+    border-radius: 0.5rem;
+}
+#ContactMe{
+    background: #313552;
+}
